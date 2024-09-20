@@ -3,16 +3,16 @@
 This is a simple console-based To-Do List application built in Java that interacts with a MySQL database. The application allows users to add tasks, view tasks, and mark tasks as completed.
 
 ## Features
-- **Add Task**: Add a new task to the list.
-- **View Tasks**: Display all tasks, including completed and incomplete ones.
-- **Mark Task as Completed**: Mark a specific task as completed by its ID.
-- **Persistent Storage**: Tasks are stored in a MySQL database for future retrieval.
+- *Add Task*: Add a new task to the list.
+- *View Tasks*: Display all tasks, including completed and incomplete ones.
+- *Mark Task as Completed*: Mark a specific task as completed by its ID.
+- *Persistent Storage*: Tasks are stored in a MySQL database for future retrieval.
 
 ## Requirements
-- **Java 8 or above**
-- **MySQL** with JDBC driver
-- **MySQL Database** and a table named `tasks`
-- **JDBC Driver**: Make sure the MySQL JDBC connector (`mysql-connector-java-X.X.X.jar`) is included in the project.
+- *Java 8 or above*
+- *MySQL* with JDBC driver
+- *MySQL Database* and a table named `tasks`
+- *JDBC Driver*: Make sure the MySQL JDBC connector (`mysql-connector-java-X.X.X.jar`) is included in the project.
 
 ## MySQL Setup
 
@@ -41,9 +41,9 @@ src/
 
 ### `ToDoList.java`
 - Contains methods to interact with the MySQL database:
-  - **`addTask(String title)`**: Adds a task to the database.
-  - **`markTaskAsCompleted(int id)`**: Marks a task as completed based on its ID.
-  - **`getAllTasks()`**: Fetches all tasks from the database.
+  - *`addTask(String title)`*: Adds a task to the database.
+  - *`markTaskAsCompleted(int id)`*: Marks a task as completed based on its ID.
+  - *`getAllTasks()`*: Fetches all tasks from the database.
 
 ### `Task.java`
 - Represents each task with the following attributes:
@@ -53,8 +53,8 @@ src/
 
 ## How to Run
 
-1. **Download or clone the project** to your local machine.
-2. **Configure MySQL Connection**:
+1. *Download or clone the project* to your local machine.
+2. *Configure MySQL Connection*:
    - Open `ToDoList.java`.
    - Update the MySQL connection details:
      ```java
@@ -62,7 +62,7 @@ src/
      String username = "root"; // Replace with your MySQL username
      String password = "password"; // Replace with your MySQL password
      ```
-3. **Compile and Run the Application**:
+3. *Compile and Run the Application*:
    - Compile:
      ```bash
      javac -cp "lib/mysql-connector-java-X.X.X.jar" src/ToDoList.java src/Task.java
@@ -71,7 +71,7 @@ src/
      ```bash
      java -cp ".:lib/mysql-connector-java-X.X.X.jar" ToDoList
      ```
-4. **Use the Application**:
+4. *Use the Application*:
    - Add tasks and manage your to-do list from the console.
 
 ## Example
@@ -101,8 +101,8 @@ Task marked as completed successfully.
 ```
 
 ## Troubleshooting
-- **SQLSyntaxErrorException**: Make sure the `tasks` table exists in the database and the connection details are correct.
-- **MySQL Connection Issues**: Ensure MySQL server is running and you've provided the correct username, password, and database URL in `ToDoList.java`.
+- *SQLSyntaxErrorException*: Make sure the `tasks` table exists in the database and the connection details are correct.
+- *MySQL Connection Issues*: Ensure MySQL server is running and you've provided the correct username, password, and database URL in `ToDoList.java`.
 
 ## License
 This project is licensed under the MIT License.
